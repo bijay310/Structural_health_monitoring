@@ -1,4 +1,4 @@
-// Please follow the steps while implementing homo_rect.py//
+// Please follow the steps while implementing homo_rectv2.py//
 
 Pick the points you want to fix: In the code, src_points are the four corners in the original frame that you want to straighten out. You could set these manually (by clicking on corners or from known marker positions) or detect them automatically (for example, with a corner-detection algorithm).
 
