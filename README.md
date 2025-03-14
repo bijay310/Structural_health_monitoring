@@ -1,1 +1,0 @@
-# Structural_health_monitoring
