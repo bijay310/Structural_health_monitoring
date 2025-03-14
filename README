@@ -1,4 +1,4 @@
-// Please follow the steps while implementing homo_rectv2.py//
+//1// Please follow the steps while implementing homo_rectv2.py//
 
 Pick the points you want to fix: In the code, src_points are the four corners in the original frame that you want to straighten out. You could set these manually (by clicking on corners or from known marker positions) or detect them automatically (for example, with a corner-detection algorithm).
 
@@ -9,3 +9,9 @@ Compute the transform: The cv2.getPerspectiveTransform function calculates the m
 Apply the transform to each video frame: The cv2.warpPerspective function uses that matrix to correct each frame so the selected region looks flat.
 
 Adjust the output: The code saves the corrected frames as a video file. You can change the file name, codec, frame rate, or simply display the frames without saving.
+
+
+//2// Please follow the steps while implementing pixel_to_mm.py//
+-Checkerboard_calibration.py gives camera matrix, distortion coefficient, rvecs and tvecs. Copy the results into pixel_to_mm.py to run the code for each experiment setup. 
+
+
