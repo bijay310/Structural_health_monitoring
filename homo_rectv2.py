@@ -28,7 +28,7 @@ def main():
     # Compute the homography
     H = cv2.getPerspectiveTransform(src_points, dst_points)
     
-    # --- 5. Prepare to write the rectified video (optional) ---
+  
     # We use an .avi container with MJPG codec for simplicity.
     output_path = "rectified_output.avi"
     fourcc = cv2.VideoWriter_fourcc(*'MJPG')
@@ -39,11 +39,10 @@ def main():
         if not ret:
             break
         
-        # --- 6. Warp the current frame using the homography ---
+        # Warp the current frame using the homography ---
         rectified_frame = cv2.warpPerspective(frame, H, (width, height))
         
-        # --- 7. Display (or save) the result ---
-        # Show in a window (optional)
+     
         cv2.imshow("Rectified Frame", rectified_frame)
         
         # Write to output file
@@ -53,7 +52,7 @@ def main():
         if cv2.waitKey(1) & 0xFF == ord('q'):
             break
     
-    # --- 8. Cleanup ---
+    # clean_all
     cap.release()
     out.release()
     cv2.destroyAllWindows()
